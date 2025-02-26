@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#0066FF',
+secondary: '#6366F1'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Plus Jakarta Sans', sans-serif;
+background: #FFFFFF;
+}
+.nav-link.active {
+color: #0066FF;
+font-weight: 600;
+}
+.skill-bar {
+width: 0;
+transition: width 1s ease-in-out;
+}
+</style>
+</head>
+<body class="w-full max-w-7xl mx-auto min-h-screen">
+<nav class="fixed top-0 w-full max-w-7xl z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+<div class="flex items-center justify-between px-4 h-14">
+<a href="#" class="font-['Pacifico'] text-xl text-primary">Sarodesigns</a>
+<button id="menuBtn" class="w-8 h-8 flex items-center justify-center">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+<div id="mobileMenu" class="hidden bg-white absolute w-full border-b border-gray-100">
+<div class="px-4 py-2">
+<a href="#home" class="nav-link block py-2 active">Home</a>
+<a href="#projects" class="nav-link block py-2">Projects</a>
+<a href="#about" class="nav-link block py-2">About</a>
+<a href="#contact" class="nav-link block py-2">Contact</a>
+</div>
+</div>
+</nav>
+<main class="pt-14">
+<section id="home" class="px-4 py-8 md:py-16">
+<div class="text-center">
+<div class="w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 rounded-full overflow-hidden">
+<img src="https://static.readdy.ai/image/d2bf0e404cd67519affd8cdf5dd24a3d/19aaeee31afee513262dde26f82d3495.png" class="w-full h-full object-cover" alt="Profile">
+</div>
+<h1 class="text-2xl md:text-4xl font-bold mb-2">Shopify Developer & E-commerce Specialist</h1>
+<p class="text-gray-600 mb-6 md:text-lg max-w-2xl mx-auto">Transforming ideas into seamless shopping experiences with custom Shopify solutions</p>
+<a href="https://www.instagram.com/saravana._official._?igsh=MW93OTl5dmFlMnQ3OQ==" target="_blank" class="inline-block bg-primary text-white px-6 py-3 !rounded-button font-medium">Let's Connect</a>
+</div>
+</section>
+<section id="projects" class="px-4 py-12 bg-gray-50">
+<h2 class="text-xl font-bold mb-8">Featured Projects</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg overflow-hidden shadow-sm">
+<img src="https://public.readdy.ai/ai/img_res/4d5fbf63d35ff4b16b89977db686cd9f.jpg" class="w-full h-56 object-cover" alt="Project">
+<div class="p-6">
+<h3 class="font-semibold text-lg mb-3">Bejoy Store</h3>
+<p class="text-gray-600 mb-4">Premium hair oil e-commerce platform. Increased sales by 85% through enhanced user experience.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="text-xs px-3 py-1.5 bg-blue-50 text-primary rounded-full">Shopify</span>
+<span class="text-xs px-3 py-1.5 bg-blue-50 text-primary rounded-full">Shopify Plus</span>
+<span class="text-xs px-3 py-1.5 bg-blue-50 text-primary rounded-full">Shopify Apps</span>
+</div>
+<a href="https://bejoy.store" target="_blank" class="text-primary font-medium flex items-center">
+View Project
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm">
+<img src="https://public.readdy.ai/ai/img_res/ffd91398cb806fb6447c6231caaa5cca.jpg" class="w-full h-56 object-cover" alt="Project">
+<div class="p-6">
+<h3 class="font-semibold text-lg mb-3">Sinras Fashion</h3>
+<p class="text-gray-600 mb-4">clothing branded store .</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="text-xs px-3 py-1.5 bg-blue-50 text-primary rounded-full">Shopify</span>
+<span class="text-xs px-3 py-1.5 bg-blue-50 text-primary rounded-full">Shopify Plus</span>
+<span class="text-xs px-3 py-1.5 bg-blue-50 text-primary rounded-full">Shopify Flow</span>
+</div>
+<a href="https://sinras.in" target="_blank" class="text-primary font-medium flex items-center">
+View Project
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section id="skills" class="px-4 py-8">
+<h2 class="text-xl font-bold mb-6">Skills & Expertise</h2>
+<div class="space-y-4 max-w-2xl mx-auto">
+<div>
+<div class="flex justify-between mb-2">
+<span class="font-medium">Shopify Theme Development</span>
+<span class="text-primary">95%</span>
+</div>
+<div class="h-2 bg-gray-100 rounded-full overflow-hidden">
+<div class="skill-bar h-full bg-primary rounded-full" style="width: 95%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="font-medium">Custom App Development</span>
+<span class="text-primary">90%</span>
+</div>
+<div class="h-2 bg-gray-100 rounded-full overflow-hidden">
+<div class="skill-bar h-full bg-primary rounded-full" style="width: 90%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="font-medium">Store Optimization</span>
+<span class="text-primary">85%</span>
+</div>
+<div class="h-2 bg-gray-100 rounded-full overflow-hidden">
+<div class="skill-bar h-full bg-primary rounded-full" style="width: 85%"></div>
+</div>
+</div>
+</div>
+</section>
+<section id="about" class="px-4 py-8 md:py-16 bg-gray-50">
+<h2 class="text-xl md:text-2xl font-bold mb-6">About Me</h2>
+<div class="bg-white rounded-lg p-4 md:p-8 max-w-3xl mx-auto">
+<p class="text-gray-600 mb-4">With over 2 years of experience as a Shopify Developer, I've helped numerous businesses establish and optimize their online presence. I specialize in creating custom Shopify solutions that drive conversions and enhance user experience.</p>
+<div class="space-y-2">
+<div class="flex items-center gap-2">
+<i class="ri-check-line text-primary"></i>
+<span>Certified Shopify Partner</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-check-line text-primary"></i>
+<span>50+ Successful Projects</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-check-line text-primary"></i>
+<span>Expert in E-commerce Solutions</span>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="px-4 py-8">
+<h2 class="text-xl font-bold mb-6">Connect With Me</h2>
+<div class="grid grid-cols-3 gap-4 max-w-2xl mx-auto">
+<a href="https://www.instagram.com/saravana._official._" target="_blank" class="flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3 !rounded-button text-sm">
+<i class="ri-instagram-line text-lg"></i>
+<span>Instagram</span>
+</a>
+<a href="https://wa.me/qr/P6SHPQMCTZQDI1" target="_blank" class="flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 !rounded-button text-sm">
+<i class="ri-whatsapp-line text-lg"></i>
+<span>WhatsApp</span>
+</a>
+<a href="https://t.me/Saropmv" target="_blank" class="flex items-center justify-center gap-2 bg-[#0088cc] text-white py-3 !rounded-button text-sm">
+<i class="ri-telegram-line text-lg"></i>
+<span>Telegram</span>
+</a>
+</div>
+</section>
+</main>
+<script>
+document.getElementById('menuBtn').addEventListener('click', function() {
+document.getElementById('mobileMenu').classList.toggle('hidden');
+});
+document.querySelectorAll('.nav-link').forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
+document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+this.classList.add('active');
+document.getElementById('mobileMenu').classList.add('hidden');
+window.scrollTo({
+top: targetElement.offsetTop - 56,
+behavior: 'smooth'
+});
+});
+});
+function animateSkillBars() {
+document.querySelectorAll('.skill-bar').forEach(bar => {
+const width = bar.style.width;
+bar.style.width = '0';
+setTimeout(() => {
+bar.style.width = width;
+}, 200);
+});
+}
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+animateSkillBars();
+}
+});
+});
+observer.observe(document.querySelector('#skills'));
+window.addEventListener('scroll', function() {
+const sections = ['home', 'projects', 'about', 'contact'];
+let currentSection = '';
+sections.forEach(section => {
+const element = document.getElementById(section);
+const rect = element.getBoundingClientRect();
+if (rect.top <= 100 && rect.bottom >= 100) {
+currentSection = section;
+}
+});
+if (currentSection) {
+document.querySelectorAll('.nav-link').forEach(link => {
+link.classList.remove('active');
+if (link.getAttribute('href') === `#${currentSection}`) {
+link.classList.add('active');
+}
+});
+}
+});
+</script>
+</body>
+</html>
